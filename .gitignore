@@ -1,0 +1,74 @@
+# Environment files and credentials (CRITICAL: NEVER COMMIT)
+.env
+.env.local
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.token
+credentials.json
+
+# Python caches and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Large raw snapshots & redundant run dumps (exclude raw 32MB dump)
+data/raw/x/*_raw.parquet
+data/raw/x/run_*
+data/raw/news/news_*
+data/processed/*.csv
+
+# Keep essential fixtures and datasets
+!data/raw/prices/btc_usd_1h.csv
+!data/raw/x/btc_x_historical_180d.parquet
+!data/raw/x/btc_x_historical_180d.csv
+!data/raw/x/historical_collection_manifest.json
+!data/raw/x/btc_x_test.json
+!data/raw/x/btc_x_live_test.json
+!data/processed/x_features_1h.parquet
+!data/processed/feature_matrix_180d.parquet
+!data/**/.gitkeep
+!models/.gitkeep
+!logs/.gitkeep
+!reports/.gitkeep
+
+# Models (exclude binary weights if needed, keep gitkeep)
+models/*.pt
+models/*.bin
+
+# Logs
+logs/*.log
+
+# IDE, OS, and test caches
+.pytest_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

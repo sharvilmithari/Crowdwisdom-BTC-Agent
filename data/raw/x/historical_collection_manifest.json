@@ -1,0 +1,30 @@
+{
+  "asset": "BTC",
+  "source_platform": "x",
+  "data_strategy": "supplementary_open_historical_archive_plus_live_apify",
+  "archive_source": "https://huggingface.co/datasets/StephanAkkerman/financial-tweets-crypto/resolve/main/data/train.parquet",
+  "collection_executed_utc": "2026-11-04T12:06:11.493603+00:00",
+  "start_window_utc": "2026-05-08T10:00:00+00:00",
+  "end_window_utc": "2026-11-04T23:59:59+00:00",
+  "total_posts_retained": 4763,
+  "duplicates_removed": 0,
+  "first_post_timestamp_utc": "2026-05-08T10:03:31+00:00",
+  "last_post_timestamp_utc": "2026-11-04T10:34:57+00:00",
+  "field_availability_rates": {
+    "text": 1.0,
+    "created_at_utc": 1.0,
+    "author_username": 0.9995800965777871,
+    "likes": 0.9976905311778291,
+    "reposts": 0.9974805794667226,
+    "replies": 0.9974805794667226
+  },
+  "platform_distinction_notes": {
+    "x_platform": "Twitter/X contains broad public discourse, breaking news, influencer commentary, and viral community posts. Metrics include likes, replies, and retweets.",
+    "stocktwits_platform": "StockTwits is an equity/crypto investor platform characterized by structured $TICKER streams and explicit Bullish/Bearish sentiment votes. Kept strictly distinct from X."
+  },
+  "output_files": {
+    "canonical_parquet": "C:\\Users\\sharv\\.gemini\\antigravity\\scratch\\crowdwisdom-btc-agent\\data\\raw\\x\\btc_x_historical_180d.parquet",
+    "canonical_csv": "C:\\Users\\sharv\\.gemini\\antigravity\\scratch\\crowdwisdom-btc-agent\\data\\raw\\x\\btc_x_historical_180d.csv",
+    "raw_snapshot": "C:\\Users\\sharv\\.gemini\\antigravity\\scratch\\crowdwisdom-btc-agent\\data\\raw\\x\\btc_x_historical_180d_raw.parquet"
+  }
+}

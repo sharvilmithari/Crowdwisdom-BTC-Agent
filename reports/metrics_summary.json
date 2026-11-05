@@ -1,0 +1,119 @@
+{
+  "combined_risk": {
+    "sharpe_ratio": 1.52,
+    "sortino_ratio": 2.55,
+    "max_drawdown": -28.89,
+    "cumulative_return": 23.57,
+    "total_trades": 2148
+  },
+  "price_only_risk": {
+    "sharpe_ratio": 1.38,
+    "sortino_ratio": 2.32,
+    "max_drawdown": -32.8,
+    "cumulative_return": 20.46,
+    "total_trades": 2148
+  },
+  "sentiment_only_risk": {
+    "sharpe_ratio": -0.8,
+    "sortino_ratio": -1.35,
+    "max_drawdown": -42.82,
+    "cumulative_return": -19.71,
+    "total_trades": 2148
+  },
+  "horizon_metrics_combined": {
+    "0": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape": 0.0,
+      "r2": 1.0,
+      "directional_accuracy": 1.0
+    },
+    "1": {
+      "mae": 1458.59,
+      "rmse": 1838.13,
+      "smape": 0.65,
+      "r2": 0.9954,
+      "directional_accuracy": 0.5112
+    },
+    "2": {
+      "mae": 2035.05,
+      "rmse": 2584.71,
+      "smape": 0.9,
+      "r2": 0.9909,
+      "directional_accuracy": 0.5063
+    },
+    "3": {
+      "mae": 2485.88,
+      "rmse": 3142.89,
+      "smape": 1.1,
+      "r2": 0.9865,
+      "directional_accuracy": 0.5121
+    },
+    "4": {
+      "mae": 2872.83,
+      "rmse": 3610.47,
+      "smape": 1.27,
+      "r2": 0.9822,
+      "directional_accuracy": 0.511
+    },
+    "5": {
+      "mae": 3196.24,
+      "rmse": 4046.41,
+      "smape": 1.41,
+      "r2": 0.9776,
+      "directional_accuracy": 0.5117
+    }
+  },
+  "horizon_metrics_price_only": {
+    "0": {
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape": 0.0,
+      "r2": 1.0,
+      "directional_accuracy": 1.0
+    },
+    "1": {
+      "mae": 1459.52,
+      "rmse": 1839.07,
+      "smape": 0.65,
+      "r2": 0.9954,
+      "directional_accuracy": 0.5102
+    },
+    "2": {
+      "mae": 2036.87,
+      "rmse": 2584.74,
+      "smape": 0.9,
+      "r2": 0.9909,
+      "directional_accuracy": 0.5063
+    },
+    "3": {
+      "mae": 2485.55,
+      "rmse": 3143.44,
+      "smape": 1.1,
+      "r2": 0.9865,
+      "directional_accuracy": 0.5158
+    },
+    "4": {
+      "mae": 2876.82,
+      "rmse": 3617.66,
+      "smape": 1.27,
+      "r2": 0.9822,
+      "directional_accuracy": 0.5054
+    },
+    "5": {
+      "mae": 3201.81,
+      "rmse": 4054.52,
+      "smape": 1.41,
+      "r2": 0.9776,
+      "directional_accuracy": 0.5117
+    }
+  },
+  "latest_forecasts": {
+    "n+0": 198235.17,
+    "n+1": 198281.29462123086,
+    "n+2": 198347.60085736983,
+    "n+3": 198298.6130687787,
+    "n+4": 198281.5674723343,
+    "n+5": 198288.8590890024
+  }
+}
