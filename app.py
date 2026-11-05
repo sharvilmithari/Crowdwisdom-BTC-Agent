@@ -1,13 +1,3 @@
-"""
-Streamlit Web Dashboard for CrowdWisdomTrading BTC Sentiment Prediction Agent.
-- Glassmorphic UI with dynamic ambient lighting and frosted glass cards.
-- 180-day historical overview of BTC price, social post volume, and sentiment dynamics.
-- Multi-horizon forecast matrix table (n+0 to n+5) powered by GradientBoostingRegressor.
-- Out-of-sample chronological walk-forward evaluation & financial risk metrics (Sharpe, Sortino, Max Drawdown).
-- Incremental value of sentiment comparison (Combined vs Price-only vs Sentiment-only).
-- API Configuration page with masked fields and real-time connection diagnostics.
-"""
-
 from datetime import datetime, timezone
 import json
 from pathlib import Path
