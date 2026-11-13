@@ -768,19 +768,25 @@ elif page == "📊 Walk-Forward & Risk":
     # Deliverables Download Section
     st.markdown("<div style='height: 18px;'></div>", unsafe_allow_html=True)
     st.markdown("<h3 style='font-size: 1.25rem; font-weight: 700;'>Assessment Deliverables</h3>", unsafe_allow_html=True)
-    d_col1, d_col2 = st.columns(2)
+    d_col1, d_col2, d_col3 = st.columns(3)
 
-    eval_md_path = cfg.reports_dir / "evaluation_report.md"
-    if eval_md_path.exists():
-        with open(eval_md_path, "r", encoding="utf-8") as f:
-            eval_content = f.read()
-        d_col1.download_button("📥 Download Technical Evaluation Report (.md)", data=eval_content, file_name="evaluation_report.md", mime="text/markdown")
+    final_pdf_path = cfg.reports_dir / "final_evaluation_report.pdf"
+    if final_pdf_path.exists():
+        with open(final_pdf_path, "rb") as f:
+            pdf_bytes = f.read()
+        d_col1.download_button("📄 Download Final Report (.pdf)", data=pdf_bytes, file_name="final_evaluation_report.pdf", mime="application/pdf")
+
+    final_md_path = cfg.reports_dir / "final_evaluation_report.md"
+    if final_md_path.exists():
+        with open(final_md_path, "r", encoding="utf-8") as f:
+            final_md_content = f.read()
+        d_col2.download_button("📥 Download Final Report (.md)", data=final_md_content, file_name="final_evaluation_report.md", mime="text/markdown")
 
     outlook_md_path = cfg.reports_dir / "one_page_outlook.md"
     if outlook_md_path.exists():
         with open(outlook_md_path, "r", encoding="utf-8") as f:
             outlook_content = f.read()
-        d_col2.download_button("📥 Download One-Page Sentiment Outlook (.md)", data=outlook_content, file_name="one_page_outlook.md", mime="text/markdown")
+        d_col3.download_button("📥 Download One-Page Outlook (.md)", data=outlook_content, file_name="one_page_outlook.md", mime="text/markdown")
 
 
 # ----------------- PAGE 3: PIPELINE EXECUTION -----------------
